@@ -1,0 +1,176 @@
+/************************************************************************************************************************
+
+Title           :   fiddle1.css        
+Developer       :   Poojitha Vemuri  
+Page Description:   Syling of the page fiddle1.html
+Contains		:	Global CSS, Media-Query(sample), IE specifi code(Sample)
+      
+**************************************************************************************************************************/
+
+/* common CSS */
+*{
+	margin:0;
+	padding:0;	
+}
+input:focus, select:focus, textarea:focus, button:focus {
+	outline: none;
+}
+/***************/
+
+.parent {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5% 3%;
+	width: 35%;
+	background-color: none;
+	min-height: auto;
+	font-size: 30px;
+}
+div.small_div {
+	background-color: #444;
+	position: relative;
+	color: white;
+	padding: 4% 6% 4% 10%;
+	border-radius: 3px;
+	min-height: auto;
+	border: 1px solid #333;
+	text-shadow: 0 0 1px #000;
+}
+.small_div::before {
+	content: "";
+	width: 0px;
+	height: 0px;
+	border: 0.8em solid transparent;
+	position: absolute;
+}
+.small_div.top-right::before {
+	right: 54px;
+	bottom: -38px;
+	border-top: 19px solid #444;
+}
+.big_div {
+	padding: 4% 6% 4% 10%;
+}
+.red_color {
+	color: red;
+}
+.outside_block {
+	margin-top: 3%;
+	text-align: center;
+}
+.border {
+	border: 1px solid #999;
+}
+.tell_yr_frens {
+	background-color: #999;
+}
+.button1 {
+	float: left;
+}
+.button2 {
+	float: right;
+}
+.cmn_button {
+	width: 46%;
+	font-size: 26px;
+	cursor: pointer;
+	font-weight: bold;
+}
+.container {
+	text-align: center;
+	margin: 3% 0;
+}
+.container button {
+	border-radius: 10px;
+	padding: 26px 0;
+}
+.give_now {
+	float: none;
+	background-color: green;
+	color: white;
+	border-style: none;
+}
+.currency::before {
+	content: "$";
+	color: black;
+	position: absolute;
+	padding: 23px 0px 0 6px;
+	font-size: 30px;
+}
+.currency input {
+	width: 82%;
+	border-radius: 10px;
+	font-size: 30px;
+	padding: 22px 0px 20px 22px;
+}
+/* Progress Bar */
+#progress_bar {
+	height: 24px;
+	width: 60%;
+	max-width: 100% !important;
+	color: #000!important;
+	background-color: #E85D3B;
+}
+.progressbar_brdr {
+	border: 1px solid #999;
+	margin-top: 3%;
+}
+/* Popup Content */
+#quest_link {
+	color: blue;
+	text-decoration: none;
+}
+.popup_content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 26px;
+    border: 1px solid #888;
+    width: 31%;
+    text-align: center;
+}
+/* Close Button */
+.mypopup {
+	display: none;	
+	position: fixed;	
+	z-index: 1;	
+	padding-top: 100px;	
+	left: 0;
+	top: 0;
+	width: 100%;	
+	height: 100%;	
+	overflow: auto;	
+	background-color: rgb(0, 0, 0);	
+	background-color: rgba(0, 0, 0, 0.4);	
+}
+.close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+.close:hover, .close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+/************** Media-Query Mobile*********************/
+
+@media only screen and (max-width: 1260px) {
+.cmn_button {
+    width: 100%;
+}
+.currency input {
+    width: 92%;
+}
+.container button {
+    margin-top: 10px;
+}
+}
+/**************IE Specific Code ************************/
+
+_:-ms-lang(x), .currency::before {
+    
+    padding: 23px 0px 0 16px;
+
+}
