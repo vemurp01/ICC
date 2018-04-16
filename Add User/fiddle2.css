@@ -1,0 +1,78 @@
+/************************************************************************************************************************
+
+Title           :   fiddle2.css        
+Developer       :   Poojitha Vemuri  
+Page Description:   Syling of the page fiddle2.html
+      
+**************************************************************************************************************************/
+
+/**************common Styles ***********/
+ html {
+     height: 100%;
+}
+ body {
+     height:100%;
+     margin:0;
+     font-size:30px;
+     font-family: sans-serif;
+     color: white;
+	 background: rgb(2,0,36); 
+    background-image: url("img/bg.png");
+	
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+}
+ input:focus, select:focus, textarea:focus, button:focus {
+     outline: none;
+}
+ input {
+     padding: 10px;
+     border-radius: 5px;
+     border-style: none;
+     width:100%;
+}
+ td {
+     text-align: center;
+}
+ header {
+     color: white;
+     background: rgb(2,0,36); /* fallback for old browsers */
+	 background: -webkit-linear-gradient(to bottom, #734b6d, #42275a);  /* Chrome 10-25, Safari 5.1-6 */
+	 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(115,75,109,1) 18%, rgba(115,75,109,1) 77%, rgba(2,0,36,1) 100%);
+}
+ main{
+     height:960px;
+}
+
+/*********************************************/
+
+ .add_user_form{
+     width: 400px;
+     padding:30px;
+     margin: 0 auto;
+}
+ .button {
+     width: 50%;
+     font-size:20px;
+     cursor: pointer;
+     font-weight: bold;
+     border-radius: 10px;
+     background-color: black;
+     color: white;
+     margin: auto;
+}
+ .error_msg{
+     color:red;
+	 font-weight:100;
+}
+
+/***********User List *************/
+ ol#static_div {
+     padding-left: 60px;
+}
+ #static_div li {
+     border-bottom: 1px solid;
+     padding: 13px 0;
+     margin-right: 50px;
+}
+ 

@@ -1,0 +1,40 @@
+<!-- /************************************************************************************************************************ -->
+
+<!-- Title           :   fiddle2.html       			 -->
+<!-- Developer       :   Poojitha Vemuri   				 -->
+<!-- Page Description:   * Simple and straight forward form.
+						 * Add user to the list dynamically and list them on the screen.
+						 * validate the form - validate email and name and email should not be empty.
+						 * Responsive on all devices.	 -->
+      
+<!-- **************************************************************************************************************************/ -->
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>click demo</title>
+	<script src="fiddle2.js"></script>
+	<link href="fiddle2.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<article>
+	<header>
+	<form class="add_user_form" id="myForm" method='post' name="myForm">
+	<table>
+		<tr><td><strong>First Name:</strong></td><td><input id="FirstName" type="textbox"></input></td></tr>
+		 <tr><td><strong>Email:</strong></td><td><input id="Email" type="email"></input></td></tr>
+		  <tr><td colspan='2'><p id="error" class="error_msg"></p></td></td><td></tr>
+		 <tr><td colspan='2'><input class="button" id="button" type='button' value='Add User' onclick=validate()></td></td><td></tr>
+	</table>     
+	</form>
+	</header>
+	<main class="static_div">
+		<ol id="static_div">
+		  <h1><u>Users List</u>:</h1>
+		  <h3 id="default_msg" class="error_msg">Users list is empty.</h3>
+		</ol>
+	</main>
+	</article>
+</body>
+</html>
