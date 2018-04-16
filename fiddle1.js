@@ -4,7 +4,7 @@ Title           :   fiddle1.js
 Developer       :   Poojitha Vemuri  
 Page Description:   scripting of the page fiddle1.html
 					code for popup, progress bar increment, amount needed change.
-functions		:	inc(), popup(), close_btn(), donation().
+functions	:	inc(), popup(), close_btn(), donation().
 					
 **************************************************************************************************************************/
 
