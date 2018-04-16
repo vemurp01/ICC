@@ -3,7 +3,7 @@
 Title           :   fiddle2.js        
 Developer       :   Poojitha Vemuri  
 Page Description:   scripting of the page fiddle2.html
-					Validations and add_user() function to capture the email and name to display on the screen.
+		    Validations and add_user() function to capture the email and name to display on the screen.
 					
 **************************************************************************************************************************/
 function validate() {
